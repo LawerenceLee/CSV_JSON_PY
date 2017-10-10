@@ -1,0 +1,17 @@
+csv_module_notes
+
+Sometimes you might have issues with the csv module and files that contain a lot of Unicode, especially if you're using Python 2. If you run into that issue, check out unicodecsv.
+
+https://pypi.python.org/pypi/unicodecsv/0.14.1
+
+For both CSV and JSON files, and others, the amazing tablib library is a great thing to check out
+
+http://docs.python-tablib.org/en/latest
+
+Newline argument with an empty string is used in case 
+a newline (\n) inside a quoted section then we want to 
+be able to differentiate that from the actual new line marking a new line. 
+
+CSV's are not indexable
+
+Be sure the headers for each column are the first line in the file, if you do not want to have to specify fieldnames in the csv.DictReader arguments.
